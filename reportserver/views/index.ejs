@@ -1,11 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <meta charset="UTF-8">
+    <title>Index</title>
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    <h1>Indexed Crimestamps:</h1>
+    <br />
+
+    <% for(var i=0; i < crimestamps.length; i++) {%>
+      <li class="crimes">
+        <span><%= crimestamps[i].timestamp %>:</span>
+        <span><%= crimestamps[i].source %></span>
+      </li>
+    <% } %>
   </body>
 </html>
