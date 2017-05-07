@@ -5,13 +5,13 @@
     <title>Index</title>
   </head>
   <body>
-    <h1>Indexed Crimestamps:</h1>
+    <h1>Indexed Reports:</h1>
     <br />
 
-    <% for(var i=0; i < crimestamps.length; i++) {%>
+    <% for(var i=0; i < reports.length; i++) {%>
       <li class="crimes">
-        <span><%= crimestamps[i].timestamp %>:</span>
-        <span><%= crimestamps[i].source %></span>
+        <span><%= reports[i].timestamp %>:</span>
+        <span><%= reports[i].source %></span>
       </li>
     <% } %>
   </body>
